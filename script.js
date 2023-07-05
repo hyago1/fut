@@ -201,69 +201,84 @@ var listaDeJogadores = document.getElementById("lista")
 
 gerarList()
 function gerarList() {
+     playersList = baseOfPlayers
+    listaDeJogadores.innerHTML = ""
      playersList.forEach((element ,index)=> {
-console.log(index);
 
+    id = index
     var card = `    
     <li  >
-    <div class="boxPlayer" id="${index}" onclick="criarTime(${index})">
+    <div class="boxPlayer" id="${index}" onclick="criarTime(${index},1)">
     <div >
     <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
     <span>Força: ${element.ger}</span><br>
     <span>Pos: ${element.pos}</span></div>
-    
-   
     </div>
     <div id="btn${index}" class="btn">
-    <button id="btnDelete${index}" onclick="esquecer(${index})">X</button>
+    <button id="btnDelete${index}" onclick="esquecer(${index},1)">X</button>
     </div>
   
     </li>`
     
 
-    console.log(element.name);
     listaDeJogadores.innerHTML += card
    
 });
 
 }
 
-var apagarItem = document.getElementById(index)
 
 
-function esquecer(index) {
+function esquecer(id, funcao) {
   var idAux
 
 
     if (Vez == 1) {
         for (let i = 0; i <= time1.length; i++) {
-            if (time1[i].name == baseOfPlayers[index].name) {
-                idAux = i
-                break
-            }
-            
+if (funcao == 1) {
+    if (time1[i].name == baseOfPlayers[id].name) {
+        idAux = i
+        break
+    }     
+}
+else{
+    if (time1[i].name == playersList[id].name) {
+        idAux = i
+        break
+    }
+}
+         
         }
+
         time1.splice(idAux , 1)   
-        var jogador = document.getElementById(index)
+        var jogador = document.getElementById(id)
         jogador.style.backgroundColor = 'rgb(113, 42, 226)'
-        var btnDelete = document.getElementById("btnDelete"+index)
+        var btnDelete = document.getElementById("btnDelete"+id)
         btnDelete.style.display = "none";
 
 
     }
     else{
         for (let i = 0; i <= time2.length; i++) {
-            if (time2[i].name == baseOfPlayers[index].name) {
-                idAux = i
-                break
+            if (funcao == 1) {
+                if (time2[i].name == baseOfPlayers[id].name) {
+                    idAux = i
+                    break
+                }     
             }
-            
-        }
+            else{
+                if (time2[i].name == playersList[id].name) {
+                    idAux = i
+                    break
+                }
+            }
+                     
+                    }
         time2.splice(idAux , 1)
-        var jogador = document.getElementById(index)
+        var jogador = document.getElementById(id)
         jogador.style.backgroundColor = ' rgb(113, 42, 226)'
-        var btnDelete = document.getElementById("btnDelete"+index)
+        var btnDelete = document.getElementById("btnDelete"+id)
         btnDelete.style.display = "none";
     
     }
@@ -272,19 +287,23 @@ function esquecer(index) {
 
 }
 
-function criarTime(id) {
+function criarTime(id, funcao) {
 
     console.log("id da funcao criar -- "+id);
-
-
+    console.log(funcao);
+    console.log(playersList[id].name);
     if (!start) {
              if (time1 == false) {
             
           
                 changeColorBox('rgb(45, 250, 18)',id)
                 if (time1.length < 11) {
-                    
-                    time1.push(playersList[id])  
+                    if (funcao == 1) {
+                          time1.push(baseOfPlayers[id])  
+                    }else{
+                        time1.push(playersList[id])  
+                    }
+                  
               
         
                 atualizarListaDeJogadores()
@@ -298,9 +317,11 @@ function criarTime(id) {
                 if (Vez == 1) {
                     changeColorBox('rgb(45, 250, 18)',id)
                     if (time1.length < 11) {
-                        
+                        if (funcao == 1) {
                         time1.push(playersList[id])  
-                  
+                        }else{
+                            time1.push(playersList[id])  
+                        }
             
                                  
                     }
@@ -315,9 +336,11 @@ function criarTime(id) {
             
             
                     if (time2.length < 11) {
-                        
+                        if (funcao == 1) {
                         time2.push(playersList[id])
-                      
+                        }else{
+                            time2.push(playersList[id])  
+                        }
             
                     }
                     if (time2.length == 11) {
@@ -547,7 +570,7 @@ function atualizarListaDeJogadores() {
     
   });
        
-  time2.forEach(element => {
+    time2.forEach(element => {
     listaJ2.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers2}</span></li>`
     numOfPlayers2++
 
@@ -593,29 +616,30 @@ if (Vez == 1) {
     return idAux
 }
 function procurar(a) {
+  
    if (a == "") {
        gerarList();
    }
    else{
            listaDeJogadores.innerHTML = ""
-var jogadoresComDaBusca = baseOfPlayers.filter((teste)=> teste.name.includes(a));
+var jogadoresComDaBusca = baseOfPlayers.filter((teste,index)=> teste.name.includes(a));
+console.log(jogadoresComDaBusca);
+playersList = jogadoresComDaBusca
 
 jogadoresComDaBusca.forEach((element ,index) => {
-console.log(index);
+
 
     var card = `    
     <li  >
-    <div class="boxPlayer" id="${index}" onclick="criarTime(${index})">
+    <div class="boxPlayer" id="${index}" onclick="criarTime(${index},2)">
     <div >
     <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
     <span>Força: ${element.ger}</span><br>
     <span>Pos: ${element.pos}</span></div>
-    
-   
     </div>
     <div id="btn${index}" class="btn">
-    <button id="btnDelete${index}" onclick="esquecer(${index})">X</button>
+    <button id="btnDelete${index}" onclick="esquecer(${index}, 2)">X</button>
     </div>
   
     </li>`
