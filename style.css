@@ -1,0 +1,133 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0px;
+    height: auto;
+}
+.listBoxPlayers{
+    padding-inline: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: 90vh;
+    margin: 20px;
+    background-color: rgb(39, 39, 39);
+
+}
+.sectionListSearch{
+    width: 60%;
+    height: 30em;
+}
+.boxPlayer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(113, 42, 226);
+    color: white;
+    border-bottom: 1px solid ;
+    border-color: gray;
+  padding: 14px;
+  width: 90%;
+  margin: 5px;
+
+  cursor: pointer;
+  border-radius: 4px;
+}
+.boxPlayer:hover{
+    background-color: rgb(159, 99, 255);
+}
+li{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+.list{
+
+
+    width: 100%;
+    height: 30em;
+    padding: 5px;
+    overflow-y: auto;
+    
+}
+#procurar{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid rgb(102, 102, 102);
+    color: white;
+}
+.campo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30em;
+    width: 20em;
+    background-color: rgb(95, 95, 95);
+    margin: 15px;
+    border-radius: 8px;
+}
+.info{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 22px;
+    width: 85%;
+}
+.infoDiv{
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+button{
+    width: 100%;
+    height: 5em;
+    display: none;
+}
+.btn{
+    width: auto;
+
+}
+.times{
+    margin-top: 2em;
+    width:100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+     margin: 20px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+#time1{
+    background-color: rgb(23, 255, 73);
+
+   
+}
+#time2{
+    background-color: rgb(255, 135, 23);
+
+}
+.titulotime{
+    background-color: rgb(213, 221, 213);
+}
+.players{
+    margin: 2px;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+}
