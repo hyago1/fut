@@ -189,8 +189,8 @@ var id
 var Vez = 1;
 let GER1 = 0;
 let GER2 = 0;
-var chancesDeChutes1ger = 8
-var chancesDeChutes2ger = 8
+var chancesDeChutes1ger = 8;
+var chancesDeChutes2ger = 8;
 
 let time1 = []
 let time2 = []
@@ -253,7 +253,7 @@ else{
 
         time1.splice(idAux , 1)   
         var jogador = document.getElementById(id)
-        jogador.style.backgroundColor = 'rgb(113, 42, 226)'
+        jogador.style.backgroundColor = '#0a516d'
         var btnDelete = document.getElementById("btnDelete"+id)
         btnDelete.style.display = "none";
 
@@ -277,7 +277,7 @@ else{
                     }
         time2.splice(idAux , 1)
         var jogador = document.getElementById(id)
-        jogador.style.backgroundColor = ' rgb(113, 42, 226)'
+        jogador.style.backgroundColor = '#0a516d'
         var btnDelete = document.getElementById("btnDelete"+id)
         btnDelete.style.display = "none";
     
@@ -389,55 +389,55 @@ function gerarPassesEChancesDeChutes() {
 
     time1.forEach(element => {
         if (element.ger >= 90 && element.pos == 'A') {
-            passes += 16
-            chutes += 2.9
+            passes += getRandomInt(15,30)
+            chutes += getRandomInt(2,6)
             chancesDeChutes1ger += 0.7
             
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
-            passes += 10
-            chutes += 1.6
+            passes += getRandomInt(10,25)
+            chutes += getRandomInt(1,3)
             chancesDeChutes1ger += 0.5
         } else if (element.ger < 86 && element.pos == 'A') {
-            passes += 6
+            passes += getRandomInt(5,20)
         }
 
 
         if (element.ger >= 90 && element.pos == 'M') {
-            passes += 26
-            chutes += 2
+            passes += getRandomInt(20,40)
+            chutes += getRandomInt(2,4)
             chancesDeChutes1ger += 0.3
 
         } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
-            passes += 21
-            chutes += 1
+            passes += getRandomInt(15,35)
+            chutes += getRandomInt(1,3)
             chancesDeChutes1ger += 0.2
         } else if (element.ger < 86 && element.pos == 'M') {
-            passes += 15
+            passes += getRandomInt(8,25)
         }
 
 
         if (element.ger >= 90 && element.pos == 'Z') {
-            passes += 18
-            chutes += 1
+            passes += getRandomInt(10,20)
+            chutes += getRandomInt(1,2)
             chancesDeChutes1ger += 0.2
             chancesDeChutes2ger -= 0.8
         } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'Z') {
-            passes += 18
+            passes += getRandomInt(5,16)
             chancesDeChutes2ger += 0.3
         } else if (element.ger < 86 && element.pos == 'Z') {
-            passes += 5
+            passes += getRandomInt(2,10)
             chancesDeChutes2ger -= 0.4
            
         }
 
         if (element.ger >= 90 && element.pos == 'G') {
-            passes += 10
+            passes += getRandomInt(5,15)
             chancesDeChutes2ger -= 2
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'G') {
-            passes += 8
+            passes += getRandomInt(5,10)
            chancesDeChutes2ger -= 1.5
         } else if (element.ger < 86 && element.pos == 'G') {
-            passes += 6
+            passes += getRandomInt(5,10)
             chancesDeChutes2ger -= 0.6
         }
      
@@ -445,60 +445,60 @@ function gerarPassesEChancesDeChutes() {
 
     time2.forEach(element => {
         if (element.ger >= 90 && element.pos == 'A') {
-            passes2 += 16
-            chutes2 += 2.9
-            chancesDeChutes2ger += 0.7
+            passes2 += getRandomInt(15,30)
+            chutes2 += getRandomInt(2,6)
+            chancesDeChutes1ger += 0.7
+            
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
-            passes += 10
-            chutes2 += 1.6
+            passes2 += getRandomInt(10,25)
+            chutes2 += getRandomInt(1,3)
             chancesDeChutes2ger += 0.5
         } else if (element.ger < 86 && element.pos == 'A') {
-            passes2 += 6
+            passes2 += getRandomInt(5,20)
         }
 
 
-
-
         if (element.ger >= 90 && element.pos == 'M') {
-            passes2 += 26
-            chutes2 += 2
+            passes2 += getRandomInt(20,40)
+            chutes2 += getRandomInt(2,4)
             chancesDeChutes2ger += 0.3
-        } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'M') {
-            passes2 += 21
-            chutes2 += 1.6
+
+        } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
+            passes2 += getRandomInt(15,35)
+            chutes2 += getRandomInt(1,3)
             chancesDeChutes2ger += 0.2
         } else if (element.ger < 86 && element.pos == 'M') {
-            passes2 += 15
+            passes2 += getRandomInt(8,25)
         }
 
 
         if (element.ger >= 90 && element.pos == 'Z') {
-            passes2 += 18
-            chutes2 += 1
+            passes2 += getRandomInt(10,20)
+            chutes2 += getRandomInt(1,2)
             chancesDeChutes2ger += 0.2
             chancesDeChutes1ger -= 0.8
         } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'Z') {
-            passes2 += 18
-            
+            passes2 += getRandomInt(5,16)
             chancesDeChutes1ger -= 0.3
         } else if (element.ger < 86 && element.pos == 'Z') {
-            passes2 += 5
+            passes += getRandomInt(2,10)
             chancesDeChutes1ger -= 0.4
            
         }
 
         if (element.ger >= 90 && element.pos == 'G') {
-            passes2 += 10
+            passes2 += getRandomInt(5,15)
             chancesDeChutes1ger -= 2
-        } else if (element.ger < 90  && element.ger >= 86 &&  element.pos == 'G') {
-            passes2 += 8
-            chancesDeChutes1ger -= 1.5
+        } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'G') {
+            passes2 += getRandomInt(5,10)
+           chancesDeChutes1ger -= 1.5
         } else if (element.ger < 86 && element.pos == 'G') {
-            passes2 += 6
-            chancesDeChutes1ger -= 0.6        }
-
-
+            passes2 += getRandomInt(5,10)
+            chancesDeChutes1ger -= 0.6
+        }
+     
     });
+
 
 
 
@@ -511,11 +511,11 @@ function gerarChutes(passes, passes2) {
 
 
 
-        chutes2 += (passes2 * chancesDeChutes1ger) / 100;
+        chutes2 += (passes2 * chancesDeChutes2ger) / 100;
 
     
 
-        chutes += (passes * chancesDeChutes2ger) / 100;
+        chutes += (passes * chancesDeChutes1ger) / 100;
 
 
     gerarGols(chutes, chutes2)
@@ -558,23 +558,34 @@ function atualizarListaDeJogadores() {
     var numOfPlayers1 = 1;
     var numOfPlayers2 = 1;
     var listaJ1 = document.getElementById("jogadoresTime1")
-    var listaJ2 = document.getElementById("jogadoresTime2")    
-        listaJ1.innerHTML =""
+    var listaJ2 = document.getElementById("jogadoresTime2")
+
+          listaJ1.innerHTML =""
+    
+      
         listaJ2.innerHTML =""
+    var procurar = document.getElementById('procurar')
 
+    procurar.value = ""
+    
 
-       
-    time1.forEach(element => {
+       if (Vez == 1) {
+          time1.forEach(element => {
     listaJ1.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers1}</span></li>`
     numOfPlayers1++
     
   });
-       
+       }else{
+               
     time2.forEach(element => {
     listaJ2.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers2}</span></li>`
     numOfPlayers2++
 
 });
+       }
+  
+
+
         
 
 
@@ -615,6 +626,14 @@ if (Vez == 1) {
 
     return idAux
 }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+
 function procurar(a) {
   
    if (a == "") {

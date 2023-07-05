@@ -2,9 +2,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color:#0a516d;
     margin: 0px;
-    height: auto;
+    height: 100vh;
 }
 .listBoxPlayers{
     padding-inline: 3em;
@@ -14,21 +14,21 @@ body{
     width: 88%;
     height: 90vh;
     margin: 20px;
-    background-color: rgb(39, 39, 39);
+    background-color:#2b2726;
 
 }
 .sectionListSearch{
     width: 60%;
-    height: 30em;
+    height: auto;
 }
 .boxPlayer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-between;
-    background-color:rgb(113, 42, 226);
+    background-color:#0a516d;
     color: white;
-    border-bottom: 1px solid ;
-    border-color: gray;
+   
+ 
   padding: 14px;
   width: 90%;
   margin: 5px;
@@ -37,7 +37,7 @@ body{
   border-radius: 4px;
 }
 .boxPlayer:hover{
-    background-color: rgb(159, 99, 255);
+    background-color: #7dad93;
 }
 li{
     display: flex;
@@ -60,36 +60,39 @@ ul{
 }
 #procurar{
     padding: 10px;
-    width: 100%;
+    width: 90%;
     margin: 5px;
     background-color: transparent;
     border-radius: 8px;
-    border: 1px solid rgb(102, 102, 102);
-    color: white;
+    border: 1px solid rgb(170, 170, 170);
+    color: rgb(204, 204, 204);
 }
 .campo{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 30em;
+    height: 80%;
     width: 20em;
-    background-color: rgb(95, 95, 95);
+    background-color: #7dad93;
     margin: 15px;
     border-radius: 8px;
 }
 .info{ 
+    font-family: 'Inter', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 10px;
     font-size: 22px;
     width: 85%;
 }
 .infoDiv{
     padding: 8px;
-    background-color: black;
+    background-color: #2b2726;
+    width: 100%;
     color: white;
     border-radius: 8px;
+    margin-top: 2em;
 }
 button{
     width: 100%;
@@ -101,10 +104,11 @@ button{
 
 }
 .times{
-    margin-top: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1em;
     width:100%;
     height: auto;
-    
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -114,20 +118,27 @@ button{
      align-items: center;
      flex-direction: column;
 }
-#time1{
+#jogadoresTime1{
     background-color: rgb(23, 255, 73);
 
    
 }
-#time2{
+#jogadoresTime2{
     background-color: rgb(255, 135, 23);
 
 }
 .titulotime{
+    border-radius: 2px;
+    padding: 2px;
     background-color: rgb(213, 221, 213);
 }
 .players{
     margin: 2px;
     align-items: center;
     background-color: rgb(117, 117, 117);
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
