@@ -209,16 +209,18 @@ function gerarList() {
     var card = `    
     <li  >
     <div class="boxPlayer" id="${index}" onclick="criarTime(${index},1)">
-    <div >
-    <span>Nome: </span>
+    <div  class="spansOfPlayers" >
+    <div>  <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
-    <span>Força: ${element.ger}</span><br>
-    <span>Pos: ${element.pos}</span></div>
-    </div>
+    <span>Pos: ${element.pos}</span></div></div>
+  
+    
+   <span  id="ger">${element.ger}</span><br>
+   </div>
     <div id="btn${index}" class="btn">
     <button id="btnDelete${index}" onclick="esquecer(${index},1)">X</button>
     </div>
-  
+    </div>
     </li>`
     
 
@@ -509,7 +511,7 @@ function gerarPassesEChancesDeChutes() {
 
 function gerarChutes(passes, passes2) {
 
-
+    console.log();
 
         chutes2 += (passes2 * chancesDeChutes2ger) / 100;
 
@@ -560,30 +562,31 @@ function atualizarListaDeJogadores() {
     var listaJ1 = document.getElementById("jogadoresTime1")
     var listaJ2 = document.getElementById("jogadoresTime2")
 
+    
           listaJ1.innerHTML =""
     
       
         listaJ2.innerHTML =""
     var procurar = document.getElementById('procurar')
-
+   
     procurar.value = ""
     
 
-       if (Vez == 1) {
+  
           time1.forEach(element => {
     listaJ1.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers1}</span></li>`
     numOfPlayers1++
     
   });
-       }else{
-               
+  
     time2.forEach(element => {
     listaJ2.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers2}</span></li>`
     numOfPlayers2++
 
 });
-       }
-  
+       
+listaJ1.lastChild.scrollIntoView();
+listaJ2.lastChild.scrollIntoView();
 
 
         
@@ -651,7 +654,7 @@ jogadoresComDaBusca.forEach((element ,index) => {
     var card = `    
     <li  >
     <div class="boxPlayer" id="${index}" onclick="criarTime(${index},2)">
-    <div >
+    <div>
     <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
     <span>Força: ${element.ger}</span><br>

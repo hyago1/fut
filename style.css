@@ -18,8 +18,13 @@ body{
 
 }
 .sectionListSearch{
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
     height: auto;
+    padding: 5px;
 }
 .boxPlayer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,12 +32,9 @@ body{
     justify-content: space-between;
     background-color:#0a516d;
     color: white;
-   
- 
   padding: 14px;
   width: 90%;
   margin: 5px;
-
   cursor: pointer;
   border-radius: 4px;
 }
@@ -44,24 +46,22 @@ li{
     align-items: center;
     width: auto;
 }
-ul{
+#lista{
     list-style: none;
     margin: 0px;
     padding-inline-start: 0px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
 }
 .list{
-
-
     width: 100%;
     height: 30em;
-    padding: 5px;
     overflow-y: auto;
-    
 }
 #procurar{
     padding: 10px;
-    width: 90%;
-    margin: 5px;
+    width: 80%;
+    margin: 3px;
     background-color: transparent;
     border-radius: 8px;
     border: 1px solid rgb(170, 170, 170);
@@ -71,8 +71,8 @@ ul{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80%;
-    width: 20em;
+    height: 85%;
+    width: 30%;
     background-color: #7dad93;
     margin: 15px;
     border-radius: 8px;
@@ -103,20 +103,30 @@ button{
     width: auto;
 
 }
+#time2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .times{
     font-family: 'Courier New', Courier, monospace;
     margin-top: 1em;
-    width:100%;
+
     height: auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+.time ul{
+    margin: 0px;
+       padding: 0px;
 }
 .time{
      margin: 20px;
      display: flex;
      align-items: center;
      flex-direction: column;
+    justify-content: center;
 }
 #jogadoresTime1{
     background-color: rgb(23, 255, 73);
@@ -127,13 +137,17 @@ button{
     background-color: rgb(255, 135, 23);
 
 }
+
 .titulotime{
     border-radius: 2px;
     padding: 2px;
+    margin: 0px;
     background-color: rgb(213, 221, 213);
 }
 .players{
-    margin: 2px;
+    font-size:70%;
+    width: 5em;
+    margin: 5px;
     align-items: center;
     background-color: rgb(117, 117, 117);
 }
@@ -141,4 +155,59 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.spansOfPlayers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#ger{
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+ align-items: center;
+}
+@media screen and (max-width:800px){
+    #lista{
+        display: block;
+      
+ 
+    }
+    .boxPlayer{
+        padding: 8px;
+    }
+    .list{
+           height:15em;
+           margin-top: 10px;
+           
+    }
+    .sectionListSearch{
+        width: 84%;
+    }
+    .listBoxPlayers{
+  justify-content: center;
+        flex-direction: column;
+    }
+    .players{
+        font-size: 80%;
+    }
+ 
+    .campo{
+       width: 80%;
+        height: 15em;
+        margin: 0px;
+        box-shadow: -2px -31px 58px -15px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -2px -31px 58px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px -31px 58px -15px rgba(0,0,0,0.75);
+    }
+    #jogadoresTime1, #jogadoresTime2{
+        overflow-y: auto;
+    }
+ 
+    .time, .times{
+        height: 5em;
+    }
+    .infoDiv ,.campo,.times{
+         margin-top: 2px;
+    }
 }
