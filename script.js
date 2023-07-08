@@ -1,103 +1,167 @@
 let baseOfPlayers =
-    [
-          {
-    name: "salah",
+    [  {
+    name: "Salah",
     ger: 89,
     pos: "A"
   },
   {
-    name: "lukaku",
+    name: "Lukaku",
     ger: 88,
     pos: "A"
   },
   {
-    name: "cr7",
+    name: "CR7",
     ger: 89,
     pos: "A"
   },
   {
-    name: "vini junior",
+    name: "Vini Junior",
     ger: 92,
     pos: "A"
   },
   {
-    name: "mbappe",
+    name: "Mbappe",
     ger: 92,
     pos: "A"
   },
   {
-    name: "benzemar",
+    name: "Benzemar",
     ger: 91,
     pos: "A"
   },
   {
-    name: "halland",
+    name: "Halland",
     ger: 92,
     pos: "A"
   },
   {
-    name: "rodrygo",
+    name: "Rodrygo",
     ger: 89,
     pos: "A"
   },
   {
-    name: "rashford",
+    name: "Rashford",
     ger: 86,
     pos: "A"
   },
   {
-    name: "di maria",
+    name: "Di Maria",
     ger: 88,
     pos: "A"
   },
   {
-    name: "mané",
+    name: "Mané",
     ger: 90,
     pos: "A"
   },
   {
-    name: "dybala",
+    name: "Lewandowski",
+    ger: 90,
+    pos: "A"
+  },
+  {
+    name: "Dybala",
     ger: 87,
     pos: "A"
   },
   {
-    name: "gabriel jesus",
+    name: "Gabriel Jesus",
     ger: 82,
     pos: "A"
   },
   {
-    name: "lewandowski",
-    ger: 90,
-    pos: "A"
-  },
-  {
-    name: "rony",
+    name: "Rony",
     ger: 75,
     pos: "A"
   },
   {
-    name: "brandt",
+    name: "Kean",
+    ger: 86,
+    pos: "A"
+  },
+  {
+    name: "Brandt",
     ger: 88,
     pos: "A"
   },
   {
-    name: "giroud",
+    name: "Giroud",
     ger: 88,
     pos: "A"
   },
   {
-    name: "neymar",
+    name: "Griezmann",
+    ger: 87,
+    pos: "A"
+  },
+  {
+    name: "Marquinho",
+    ger: 90,
+    pos: "A"
+  },
+  {
+    name: "Cano",
+    ger: 77,
+    pos: "A"
+  },
+  {
+    name: "Marco Reus",
+    ger: 88,
+    pos: "M"
+  },
+  {
+    name: "Bellingham",
+    ger: 88,
+    pos: "M"
+  },
+  {
+    name: "Felipe Melo",
+    ger: 70,
+    pos: "M"
+  },
+  {
+    name: "Valverde",
+    ger: 85,
+    pos: "M"
+  },
+  {
+    name: "Pogba",
+    ger: 86,
+    pos: "M"
+  },
+  {
+    name: "Modric",
+    ger: 89,
+    pos: "M"
+  },
+  {
+    name: "Kross",
+    ger: 88,
+    pos: "M"
+  },
+  {
+    name: "De Bruyne",
     ger: 90,
     pos: "M"
   },
   {
-    name: "foden",
-    ger: 88,
+    name: "Kanté",
+    ger: 90,
     pos: "M"
   },
   {
-    name: "pedri",
+    name: "Bruno Fernandes",
+    ger: 85,
+    pos: "M"
+  },
+  {
+    name: "Pedri",
     ger: 87,
+    pos: "M"
+  },
+  {
+    name: "Neymar",
+    ger: 90,
     pos: "M"
   },
   {
@@ -106,64 +170,119 @@ let baseOfPlayers =
     pos: "M"
   },
   {
-    name: "bruno fernandes",
-    ger: 85,
-    pos: "M"
-  },
-  {
-    name: "modric",
-    ger: 89,
-    pos: "M"
-  },
-  {
-    name: "kross",
-    ger: 88,
-    pos: "M"
-  },
-  {
-    name: "de bruyne",
-    ger: 90,
-    pos: "M"
-  },
-  {
-    name: "kanté",
-    ger: 90,
-    pos: "M"
-  },
-  {
-    name: "marquinhos",
-    ger: 90,
-    pos: "Z"
-  },
-  {
-    name: "van dijk",
+    name: "Van Dijk",
     ger: 89,
     pos: "Z"
   },
   {
-    name: "rudger",
+    name: "Rudger",
     ger: 89,
     pos: "Z"
   },
   {
-    name: "sergio ramos",
+    name: "Sergio Ramos",
     ger: 88,
     pos: "Z"
   },
   {
-    name: "koulibali",
+    name: "Koulibali",
     ger: 89,
     pos: "Z"
   },
   {
-    name: "bonucci",
+    name: "Casemiro",
+    ger: 89,
+    pos: "Z"
+  },
+  {
+    name: "Alaba",
     ger: 85,
     pos: "Z"
   },
   {
-    name: "alaba",
-    ger: 85,
+    name: "Davies",
+    ger: 88,
     pos: "Z"
+  },
+  {
+    name: "Marquinhos",
+    ger: 90,
+    pos: "Z"
+  },
+  {
+    name: "Gil",
+    pos: "Z",
+    ger: 85
+  },
+  {
+    name: "Kannemann",
+    pos: "Z",
+    ger: 85
+  },
+  {
+    name: "Rodrigo Caio",
+    pos: "Z",
+    ger: 86
+  },
+  {
+    name: "Geromel",
+    pos: "Z",
+    ger: 85
+  },
+  {
+    name: "Réver",
+    pos: "Z",
+    ger: 84
+  },
+  {
+    name: "Léo Pereira",
+    pos: "Z",
+    ger: 83
+  },
+  {
+    name: "Bruno Alves",
+    pos: "Z",
+    ger: 82
+  },
+  {
+    name: "Víctor Cuesta",
+    pos: "Z",
+    ger: 86
+  },
+  {
+    name: "Gustavo Gómez",
+    pos: "Z",
+    ger: 87
+  },
+  {
+    name: "Luiz Felipe",
+    pos: "Z",
+    ger: 81
+  },
+  {
+    name: "Martinez",
+    ger: 90,
+    pos: "G"
+  },
+  {
+    name: "Neuer",
+    ger: 88,
+    pos: "G"
+  },
+  {
+    name: "Picford",
+    ger: 88,
+    pos: "G"
+  },
+  {
+    name: "Navas",
+    ger: 88,
+    pos: "G"
+  },
+  {
+    name: "Donaruma",
+    ger: 89,
+    pos: "G"
   }
   
 
