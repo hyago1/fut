@@ -1,180 +1,172 @@
 let baseOfPlayers =
     [
-        {
-            name: "messi",
-            ger: 91,
-            pos: 'M'
-        },
-        {
-            name: "salah",
-            ger: 89,
-            pos: 'A'
-        },
-        {
-            name: "neymar",
-            ger: 90,
-            pos: 'M'
-        },
-        {
-            name: "van dijk",
-            ger: 89,
-            pos: 'Z'
-        },
-        {
-            name: "foden",
-            ger: 88,
-            pos: 'M'
-        },
-        {
-            name: "pedri",
-            ger: 87,
-            pos: 'M'
-        },
-        {
-            name: "martinez",
-            ger: 90,
-            pos: 'G'
-        },
-        {
-            name: "lukaku",
-            ger: 88,
-            pos: 'A'
-        },
-        {
-            name: "rudger",
-            ger: 89,
-            pos: 'Z'
-        },
+          {
+    name: "salah",
+    ger: 89,
+    pos: "A"
+  },
+  {
+    name: "lukaku",
+    ger: 88,
+    pos: "A"
+  },
+  {
+    name: "cr7",
+    ger: 89,
+    pos: "A"
+  },
+  {
+    name: "vini junior",
+    ger: 92,
+    pos: "A"
+  },
+  {
+    name: "mbappe",
+    ger: 92,
+    pos: "A"
+  },
+  {
+    name: "benzemar",
+    ger: 91,
+    pos: "A"
+  },
+  {
+    name: "halland",
+    ger: 92,
+    pos: "A"
+  },
+  {
+    name: "rodrygo",
+    ger: 89,
+    pos: "A"
+  },
+  {
+    name: "rashford",
+    ger: 86,
+    pos: "A"
+  },
+  {
+    name: "di maria",
+    ger: 88,
+    pos: "A"
+  },
+  {
+    name: "mané",
+    ger: 90,
+    pos: "A"
+  },
+  {
+    name: "dybala",
+    ger: 87,
+    pos: "A"
+  },
+  {
+    name: "gabriel jesus",
+    ger: 82,
+    pos: "A"
+  },
+  {
+    name: "lewandowski",
+    ger: 90,
+    pos: "A"
+  },
+  {
+    name: "rony",
+    ger: 75,
+    pos: "A"
+  },
+  {
+    name: "brandt",
+    ger: 88,
+    pos: "A"
+  },
+  {
+    name: "giroud",
+    ger: 88,
+    pos: "A"
+  },
+  {
+    name: "neymar",
+    ger: 90,
+    pos: "M"
+  },
+  {
+    name: "foden",
+    ger: 88,
+    pos: "M"
+  },
+  {
+    name: "pedri",
+    ger: 87,
+    pos: "M"
+  },
+  {
+    name: "Grealish",
+    ger: 89,
+    pos: "M"
+  },
+  {
+    name: "bruno fernandes",
+    ger: 85,
+    pos: "M"
+  },
+  {
+    name: "modric",
+    ger: 89,
+    pos: "M"
+  },
+  {
+    name: "kross",
+    ger: 88,
+    pos: "M"
+  },
+  {
+    name: "de bruyne",
+    ger: 90,
+    pos: "M"
+  },
+  {
+    name: "kanté",
+    ger: 90,
+    pos: "M"
+  },
+  {
+    name: "marquinhos",
+    ger: 90,
+    pos: "Z"
+  },
+  {
+    name: "van dijk",
+    ger: 89,
+    pos: "Z"
+  },
+  {
+    name: "rudger",
+    ger: 89,
+    pos: "Z"
+  },
+  {
+    name: "sergio ramos",
+    ger: 88,
+    pos: "Z"
+  },
+  {
+    name: "koulibali",
+    ger: 89,
+    pos: "Z"
+  },
+  {
+    name: "bonucci",
+    ger: 85,
+    pos: "Z"
+  },
+  {
+    name: "alaba",
+    ger: 85,
+    pos: "Z"
+  }
+  
 
-        {
-            name: "cr7",
-            ger: 89,
-            pos: 'A'
-        },
-        {
-            name: "vini junior",
-            ger: 92,
-            pos: 'A'
-        },
-        {
-            name: "mbappe",
-            ger: 92,
-            pos: 'A'
-        },
-        {
-            name: "benzemar",
-            ger: 91,
-            pos: 'A'
-        },
-        {
-            name: "halland",
-            ger: 92,
-            pos: 'A'
-        },
-        {
-            name: "Grealish",
-            ger: 89,
-            pos: 'M'
-        },
-        {
-            name: "rodrygo",
-            ger: 89,
-            pos: 'A'
-        },
-        {
-            name: "rashford",
-            ger: 86,
-            pos: 'A'
-        },
-        {
-            name: "bruno fernandes",
-            ger: 85,
-            pos: 'M'
-        },
-        {
-            name: "modric",
-            ger: 89,
-            pos: 'M'
-        },
-        {
-            name: "kross",
-            ger: 88,
-            pos: 'M'
-        },
-        {
-            name: "de bruyne",
-            ger: 90,
-            pos: 'M'
-        },
-        
-        {
-            name: "kanté",
-            ger: 90,
-            pos: 'M'
-        },
-        {
-            name: "di maria",
-            ger: 88,
-            pos: 'A'
-        },
-        {
-            name: "mané",
-            ger: 90,
-            pos: 'A'
-        },    
-        {
-            name: "sergio ramos",
-            ger: 88,
-            pos: 'Z'
-        },
-        {
-            name: "koulibali",
-            ger: 89,
-            pos: 'Z'
-        },
-        
-        {
-            name: "casemiro",
-            ger: 89,
-            pos: 'Z'
-        },
-        
-        {
-            name: "marquinhos",
-            ger: 90,
-            pos: 'Z'
-        },
-        
-        {
-            name: "davies",
-            ger: 88,
-            pos: 'Z'
-        },
-        {
-            name: "neuer",
-            ger: 88,
-            pos: 'G'
-        },
-        {
-            name: "courtois",
-            ger: 90,
-            pos: 'G'
-        },
-        {
-            name: "picford",
-            ger: 88,
-            pos: 'G'
-        },
-        {
-            name: "navas",
-            ger: 88,
-            pos: 'G'
-        },
-        {
-            name: "donaruma",
-            ger: 89,
-            pos: 'G'
-        },
 
     ]
     let playersList = baseOfPlayers
@@ -393,7 +385,7 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'A') {
             passes += getRandomInt(15,30)
             chutes += getRandomInt(2,6)
-            chancesDeChutes1ger += 0.7
+        
             
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
             passes += getRandomInt(10,25)
@@ -407,12 +399,12 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'M') {
             passes += getRandomInt(20,40)
             chutes += getRandomInt(2,4)
-            chancesDeChutes1ger += 0.3
+        
 
         } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
             passes += getRandomInt(15,35)
             chutes += getRandomInt(1,3)
-            chancesDeChutes1ger += 0.2
+         
         } else if (element.ger < 86 && element.pos == 'M') {
             passes += getRandomInt(8,25)
         }
@@ -421,26 +413,25 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'Z') {
             passes += getRandomInt(10,20)
             chutes += getRandomInt(1,2)
-            chancesDeChutes1ger += 0.2
-            chancesDeChutes2ger -= 0.8
+        
+        
         } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'Z') {
             passes += getRandomInt(5,16)
-            chancesDeChutes2ger += 0.3
+        
         } else if (element.ger < 86 && element.pos == 'Z') {
             passes += getRandomInt(2,10)
-            chancesDeChutes2ger -= 0.4
+        
            
         }
 
         if (element.ger >= 90 && element.pos == 'G') {
             passes += getRandomInt(5,15)
-            chancesDeChutes2ger -= 2
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'G') {
             passes += getRandomInt(5,10)
-           chancesDeChutes2ger -= 1.5
+        
         } else if (element.ger < 86 && element.pos == 'G') {
             passes += getRandomInt(5,10)
-            chancesDeChutes2ger -= 0.6
+        
         }
      
     });
@@ -449,12 +440,12 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'A') {
             passes2 += getRandomInt(15,30)
             chutes2 += getRandomInt(2,6)
-            chancesDeChutes1ger += 0.7
+        
             
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
             passes2 += getRandomInt(10,25)
             chutes2 += getRandomInt(1,3)
-            chancesDeChutes2ger += 0.5
+        
         } else if (element.ger < 86 && element.pos == 'A') {
             passes2 += getRandomInt(5,20)
         }
@@ -463,12 +454,12 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'M') {
             passes2 += getRandomInt(20,40)
             chutes2 += getRandomInt(2,4)
-            chancesDeChutes2ger += 0.3
+        
 
         } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
             passes2 += getRandomInt(15,35)
             chutes2 += getRandomInt(1,3)
-            chancesDeChutes2ger += 0.2
+        
         } else if (element.ger < 86 && element.pos == 'M') {
             passes2 += getRandomInt(8,25)
         }
@@ -477,26 +468,25 @@ function gerarPassesEChancesDeChutes() {
         if (element.ger >= 90 && element.pos == 'Z') {
             passes2 += getRandomInt(10,20)
             chutes2 += getRandomInt(1,2)
-            chancesDeChutes2ger += 0.2
-            chancesDeChutes1ger -= 0.8
+        
+        
         } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'Z') {
             passes2 += getRandomInt(5,16)
-            chancesDeChutes1ger -= 0.3
+        
         } else if (element.ger < 86 && element.pos == 'Z') {
             passes += getRandomInt(2,10)
-            chancesDeChutes1ger -= 0.4
+        
            
         }
 
         if (element.ger >= 90 && element.pos == 'G') {
             passes2 += getRandomInt(5,15)
-            chancesDeChutes1ger -= 2
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'G') {
             passes2 += getRandomInt(5,10)
-           chancesDeChutes1ger -= 1.5
+        
         } else if (element.ger < 86 && element.pos == 'G') {
             passes2 += getRandomInt(5,10)
-            chancesDeChutes1ger -= 0.6
+        
         }
      
     });
@@ -505,32 +495,19 @@ function gerarPassesEChancesDeChutes() {
 
 
 
-    gerarChutes(passes, passes2)
-
-}
-
-function gerarChutes(passes, passes2) {
-
-    console.log();
-
-        chutes2 += (passes2 * chancesDeChutes2ger) / 100;
-
-    
-
-        chutes += (passes * chancesDeChutes1ger) / 100;
-
 
     gerarGols(chutes, chutes2)
-
 }
+
+
 
 function gerarGols(chutes, chutes2) {
 
 
 
 
-    gols += (chutes * 5.7) / 100;
-    gols2 += (chutes2 * 5.7) / 100;
+    gols += (chutes * getRandomInt(8,15)) / 100;
+    gols2 += (chutes2 * getRandomInt(8,15)) / 100;
 
 
     mostrar()
