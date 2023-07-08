@@ -74,6 +74,104 @@ let baseOfPlayers =
     ger: 75,
     pos: "A"
   },
+  
+    {
+      name: "Tiquinho Soares",
+      ger: 76,
+      pos: "A"
+    },
+    {
+      name: "Andre",
+      ger: 76,
+      pos: "A"
+    },
+    {
+      name: "Keno",
+      ger: 74,
+      pos: "A"
+    },
+    {
+      name: "Hulk",
+      ger: 80,
+      pos: "A"
+    },
+    {
+      name: "Paulinho",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Pavon",
+      ger: 73,
+      pos: "A"
+    },
+    {
+      name: "Roger Guedes",
+      ger: 77,
+      pos: "A"
+    },
+    {
+      name: "Yuri Alberto",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Pato",
+      ger: 74,
+      pos: "A"
+    },
+    {
+      name: "Calleri",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Suarez",
+      ger: 80,
+      pos: "A"
+    },
+    {
+      name: "Pedro",
+      ger: 79,
+      pos: "A"
+    },
+    {
+      name: "Cebolinha",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Pedro Raul",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Marinho",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Yago Pikachu",
+      ger: 75,
+      pos: "A"
+    },
+    {
+      name: "Endrick",
+      ger: 73,
+      pos: "A"
+    },
+    {
+      name: "Dudu",
+      ger: 79,
+      pos: "A"
+    },
+    {
+      name: "Vitor Roque",
+      ger: 75,
+      pos: "A"
+    },
+  
+  
   {
     name: "Kean",
     ger: 86,
@@ -115,6 +213,76 @@ let baseOfPlayers =
     pos: "M"
   },
   {
+    name: "Ganso",
+    ger: 77,
+    pos: "M"
+  },
+  {
+    name: "Pedrinho",
+    ger: 74,
+    pos: "M"
+  },
+  {
+    name: "Paulinho",
+    ger: 74,
+    pos: "M"
+  },
+  {
+    name: "Vina",
+    ger: 75,
+    pos: "M"
+  },
+  {
+    name: "Arrascaeta",
+    ger: 81,
+    pos: "M"
+  },
+  {
+    name: "Allan",
+    ger: 75,
+    pos: "M"
+  },
+  {
+    name: "Gerson",
+    ger: 78,
+    pos: "M"
+  },
+  {
+    name: "Bruno Henrique",
+    ger: 76,
+    pos: "M"
+  },
+  {
+    name: "Everton Ribeiro",
+    ger: 76,
+    pos: "M"
+  },
+  {
+    name: "Jair",
+    ger: 75,
+    pos: "M"
+  },
+  {
+    name: "Raphael Veiga",
+    ger: 79,
+    pos: "M"
+  },
+  {
+    name: "Gabriel Menino",
+    ger: 75,
+    pos: "M"
+  },
+  {
+    name: "Fernandinho",
+    ger: 77,
+    pos: "M"
+  },
+  {
+    name: "Terans",
+    ger: 75,
+    pos: "M"
+  },
+  {
     name: "Felipe Melo",
     ger: 70,
     pos: "M"
@@ -132,6 +300,11 @@ let baseOfPlayers =
   {
     name: "Modric",
     ger: 89,
+    pos: "M"
+  },
+  {
+    name: "Messi",
+    ger: 85,
     pos: "M"
   },
   {
@@ -202,6 +375,71 @@ let baseOfPlayers =
   {
     name: "Davies",
     ger: 88,
+    pos: "Z"
+  },
+  {
+    name: "Victor Cuesta",
+    ger: 72,
+    pos: "Z"
+  },
+  {
+    name: "Marcelo",
+    ger: 79,
+    pos: "Z"
+  },
+  {
+    name: "Nino",
+    ger: 75,
+    pos: "Z"
+  },
+  {
+    name: "Guilherme Arana",
+    ger: 75,
+    pos: "Z"
+  },
+  {
+    name: "Rafinha",
+    ger: 73,
+    pos: "Z"
+  },
+  {
+    name: "Arboleda",
+    ger: 72,
+    pos: "Z"
+  },
+  {
+    name: "Reinaldo",
+    ger: 74,
+    pos: "Z"
+  },
+  {
+    name: "Leo Pele",
+    ger: 74,
+    pos: "Z"
+  },
+  {
+    name: "Ayrton Lucas",
+    ger: 76,
+    pos: "Z"
+  },
+  {
+    name: "Leo Pereira",
+    ger: 76,
+    pos: "Z"
+  },
+  {
+    name: "Geromel",
+    ger: 72,
+    pos: "Z"
+  },
+  {
+    name: "Kannemann",
+    ger: 74,
+    pos: "Z"
+  },
+  {
+    name: "Gustavo Gomez",
+    ger: 78,
     pos: "Z"
   },
   {
@@ -280,10 +518,38 @@ let baseOfPlayers =
     pos: "G"
   },
   {
+    name: "Lucas Perri",
+    ger: 72,
+    pos: "G"
+  },
+  {
+    name: "Cassio",
+    ger: 76,
+    pos: "G"
+  },
+  {
+    name: "Jandrei",
+    ger: 72,
+    pos: "G"
+  },
+  {
+    name: "Leo Jardim",
+    ger: 74,
+    pos: "G"
+  },
+  {
+    name: "Bento",
+    ger: 77,
+    pos: "G"
+  },
+  {
     name: "Donaruma",
     ger: 89,
     pos: "G"
-  }
+  },
+  //---------------------------------
+ 
+    
   
 
 
