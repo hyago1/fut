@@ -644,7 +644,7 @@ function procurar(a) {
    }
    else{
            listaDeJogadores.innerHTML = ""
-var jogadoresComDaBusca = baseOfPlayers.filter((teste,index)=> teste.name.includes(a));
+var jogadoresComDaBusca = baseOfPlayers.filter((teste,index)=> teste.name.toLocaleLowerCase().includes(a));
 console.log(jogadoresComDaBusca);
 playersList = jogadoresComDaBusca
 
