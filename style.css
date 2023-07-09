@@ -191,9 +191,11 @@ button{
     .players{
         font-size: 80%;
     }
- 
+    ::-webkit-scrollbar {
+        display: none;
+        }
     .campo{
-       width: 80%;
+       width: 100%;
         height: 15em;
         margin: 0px;
         box-shadow: -2px -31px 58px -15px rgba(0,0,0,0.75);

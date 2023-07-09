@@ -1,6 +1,6 @@
-
-const baseOfPlayers = window.baseOfPlayers;
-    let playersList = baseOfPlayers
+   
+let baseOfPlayers;
+let playersList;
 // variaveis
 var passes = 0;
 var chutes = 0;
@@ -24,9 +24,16 @@ var listaDeJogadores = document.getElementById("lista")
 
 gerarList()
 function gerarList() {
-     playersList = baseOfPlayers
+
     listaDeJogadores.innerHTML = ""
-     playersList.forEach((element ,index)=> {
+    fetch('/database.json')
+    .then(response => {
+     return response.json()  
+    }
+   ).then((json) =>{
+    baseOfPlayers = json
+    playersList = baseOfPlayers
+    playersList.forEach((element ,index)=> {
 
     id = index
     var card = `    
@@ -50,6 +57,8 @@ function gerarList() {
     listaDeJogadores.innerHTML += card
    
 });
+   })
+    
 
 }
 
@@ -462,16 +471,18 @@ jogadoresComDaBusca.forEach((element ,index) => {
     var card = `    
     <li  >
     <div class="boxPlayer" id="${index}" onclick="criarTime(${index},2)">
-    <div>
-    <span>Nome: </span>
+    <div  class="spansOfPlayers" >
+    <div>  <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
-    <span>Força: ${element.ger}</span><br>
-    <span>Pos: ${element.pos}</span></div>
-    </div>
-    <div id="btn${index}" class="btn">
-    <button id="btnDelete${index}" onclick="esquecer(${index}, 2)">X</button>
-    </div>
+    <span>Pos: ${element.pos}</span></div></div>
   
+    
+   <span  id="ger">${element.ger}</span><br>
+   </div>
+    <div id="btn${index}" class="btn">
+    <button id="btnDelete${index}" onclick="esquecer(${index},2)">X</button>
+    </div>
+    </div>
     </li>`
     
 
