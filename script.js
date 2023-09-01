@@ -39,6 +39,7 @@ function gerarList() {
     var card = `    
     <li  >
     <div class="boxPlayer" id="${index}" onclick="criarTime(${index},1)">
+    <img src="${element.img}">
     <div  class="spansOfPlayers" >
     <div>  <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
@@ -46,6 +47,7 @@ function gerarList() {
   
     
    <span  id="ger">${element.ger}</span><br>
+
    </div>
     <div id="btn${index}" class="btn">
     <button id="btnDelete${index}" onclick="esquecer(${index},1)">X</button>
@@ -365,8 +367,26 @@ function mostrar() {
     var gol2 = document.getElementById('gols2')
     var passe2 = document.getElementById('passes2')
     var chute2 = document.getElementById('chutes2')
+    var load = document.getElementById("load")
+    load.style.display = "block"
+   load.animate(
+        [
+          // keyframes
+          { transform: "rotate(0deg)" },
+          { transform: "rotate(360deg)" },
+        ],
+        {
+          // timing options
+          duration: 2500,
+          iterations: Infinity ,
+        },
+      );
 
-    gol.textContent = Math.round(gols);
+
+
+    setTimeout(() => {
+        load.style.display = "none"
+         gol.textContent = Math.round(gols);
     passe.textContent = passes;
     chute.textContent = Math.round(chutes);
 
@@ -374,6 +394,9 @@ function mostrar() {
     passe2.textContent = passes2;
     chute2.textContent = Math.round(chutes2);
 
+    }, 2000);
+
+   
 
 }
 
@@ -455,9 +478,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-
-
 function procurar(a) {
   
    if (a == "") {
@@ -474,8 +494,10 @@ jogadoresComDaBusca.forEach((element ,index) => {
 
     var card = `    
     <li  >
-    <div class="boxPlayer" id="${index}" onclick="criarTime(${index},2)">
+    <div class="boxPlayer" id="${index}" onclick="criarTime(${index},2)">   
+     <img src="${element.img}">
     <div  class="spansOfPlayers" >
+
     <div>  <span>Nome: </span>
     <span id="namePlayer">${element.name}</span><br>
     <span>Pos: ${element.pos}</span></div></div>
