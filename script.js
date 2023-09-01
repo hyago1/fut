@@ -194,17 +194,7 @@ function criarTime(id, funcao) {
         alert("Impossivel selecionar mais jogadores")
     }
 
-   
 
-
-
-   
-
-
-
-    console.log(time1);
-
-    console.log(time2);
 }
 
 function somarGer() {
@@ -226,37 +216,47 @@ function gerarPassesEChancesDeChutes() {
     time1.forEach(element => {
         if (element.ger >= 90 && element.pos == 'A') {
             passes += getRandomInt(15,30)
-            chutes += getRandomInt(2,7)
+            chutes += getRandomInt(0,5)
+
+           
+            console.log(element.name +"Deu "+chutes);
         
             
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
             passes += getRandomInt(10,25)
-            chutes += getRandomInt(0,5)
+            chutes += getRandomInt(0,4)
+
             chancesDeChutes1ger += 0.5
+            console.log(element.name +"Deu "+chutes);
         } else if (element.ger < 86 && element.pos == 'A') {
             passes += getRandomInt(5,20)
             chutes += getRandomInt(0,3)
+            console.log(element.name +"Deu "+chutes);
         }
 
 
         if (element.ger >= 90 && element.pos == 'M') {
             passes += getRandomInt(20,40)
-            chutes += getRandomInt(2,7)
+            chutes += getRandomInt(0,5)
+            console.log(element.name +"Deu "+chutes);
         
 
         } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
             passes += getRandomInt(15,35)
-            chutes += getRandomInt(0,5)
+            chutes += getRandomInt(0,4)
+            console.log(element.name +"Deu "+chutes);
          
         } else if (element.ger < 86 && element.pos == 'M') {
             passes += getRandomInt(8,25)
             chutes += getRandomInt(0,3)
+            console.log(element.name +"Deu "+chutes);
         }
 
 
         if (element.ger >= 90 && element.pos == 'Z') {
             passes += getRandomInt(10,20)
             chutes += getRandomInt(0,2)
+            console.log(element.name +"Deu "+chutes);
         
         
         } else if (element.ger < 90  && element.ger >= 86 && element.pos == 'Z') {
@@ -283,12 +283,12 @@ function gerarPassesEChancesDeChutes() {
     time2.forEach(element => {
         if (element.ger >= 90 && element.pos == 'A') {
             passes2 += getRandomInt(15,30)
-            chutes2 += getRandomInt(2,7)
+            chutes2 += getRandomInt(0,5)
         
             
         } else if (element.ger < 90 && element.ger >= 86 && element.pos == 'A') {
             passes2 += getRandomInt(10,25)
-            chutes2 += getRandomInt(0,5)
+            chutes2 += getRandomInt(0,4)
         
         } else if (element.ger < 86 && element.pos == 'A') {
             passes2 += getRandomInt(5,20)
@@ -298,12 +298,12 @@ function gerarPassesEChancesDeChutes() {
 
         if (element.ger >= 90 && element.pos == 'M') {
             passes2 += getRandomInt(20,40)
-            chutes2 += getRandomInt(2,7)
+            chutes2 += getRandomInt(0,5)
         
 
         } else if (element.ger < 90 &&element.ger >= 86 &&element.pos == 'M') {
             passes2 += getRandomInt(15,35)
-            chutes2 += getRandomInt(0,5)
+            chutes2 += getRandomInt(0,4)
         
         } else if (element.ger < 86 && element.pos == 'M') {
             passes2 += getRandomInt(8,25)
