@@ -1,7 +1,7 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+
     background-color:#0a516d;
     margin: 0px;
     height: 100vh;
@@ -13,7 +13,8 @@ body{
     align-items: center;
     width: 88%;
     height: 90vh;
-    margin: 20px;
+  border-bottom-right-radius:15px;
+  border-bottom-left-radius:15px;
     background-color:#2b2726;
 
 }
@@ -34,6 +35,7 @@ img{
 .boxPlayer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    font-size: 12px;
     justify-content: space-between;
     background-color:#0a516d;
     color: white;
@@ -236,7 +238,42 @@ button{
 }
 @media screen and (min-width:1050px){
     #lista{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
 
+}
+.liCamps ul{
+    margin: 0;
+    padding: 0;
+}
+.camps{
+display: flex;
+width: 80%;
+justify-content: center;
+}
+
+.camp{
+    margin: 5px;
+    background:transparent;
+    background-size: 100%;
+    background-image: url('./campo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+padding-block: 30px;
+    width:80%;
+    height: auto;
+
+}
+#plg{
+    width: 1px;
+}
+.pl{
+
+    padding: 2px;
+    margin: 15px;
+    background-color: #2b2726;
+}
+.goleiro,.defesa,.meio,.ataque{
+    display: flex;
+    justify-content: center;
 }

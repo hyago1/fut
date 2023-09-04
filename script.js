@@ -139,8 +139,6 @@ function criarTime(id, funcao) {
                     }else{
                         time1.push(playersList[id])  
                     }
-                  
-              
         
                 atualizarListaDeJogadores()
                              
@@ -407,6 +405,7 @@ function atualizarListaDeJogadores() {
     var listaJ2 = document.getElementById("jogadoresTime2")
 
     
+    
           listaJ1.innerHTML =""
     
       
@@ -420,6 +419,8 @@ function atualizarListaDeJogadores() {
           time1.forEach(element => {
     listaJ1.innerHTML +=`<li class="players">${element.name} - <span> ${numOfPlayers1}</span></li>`
     numOfPlayers1++
+           
+
     
   });
   
